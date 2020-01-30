@@ -1,0 +1,93 @@
+.grid {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+[class^="grid-"] {
+    min-height: 10px;
+    position: relative;
+}
+
+.grid-12 {
+    width: 100%;
+}
+
+.grid-11 {
+    width: 91.66666667%;
+}
+
+.grid-10 {
+    width: 83.33333333%;
+}
+
+.grid-9 {
+    width: 75%;
+}
+
+.grid-8 {
+    width: 66.66666667%;
+}
+
+.grid-7 {
+    width: 58.33333333%;
+}
+
+.grid-6 {
+    width: 50%;
+}
+
+.grid-5 {
+    width: 41.66666667%;
+}
+
+.grid-4 {
+    width: 33.33333333%;
+}
+
+.grid-3 {
+    width: 25%;
+}
+
+.grid-2 {
+    width: 16.66666667%;
+}
+
+.grid-1 {
+    width: 8.33333333%;
+}
+
+.all {
+  background: teal;
+}
+
+.a {
+  background: tomato;
+}
+
+.b {
+  background: gold;
+}
+
+.button {
+  border-radius: 2px;
+}
+
+.all ,.a, .b {
+padding: 10px 50px;
+}
+
+.mt50 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}

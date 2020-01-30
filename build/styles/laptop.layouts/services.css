@@ -1,0 +1,76 @@
+/*laptop*/
+#services__fullwidth {
+  width: 100%;
+  background-color: #fff; }
+
+#services {
+  margin: auto;
+  width: 640px; }
+
+#services_tittle {
+  text-align: center;
+  margin-top: 50px; }
+
+#services_tittle h1 {
+  font-size: 160%; }
+
+#services_tittle h2 {
+  font-weight: 400;
+  color: #989898;
+  font-size: 125%; }
+
+#services_tittle h6 {
+  color: #989898; }
+
+#services_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center; }
+
+.services_block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.service_block_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: left; }
+
+.service_block_text h1 {
+  font-size: 110%;
+  font-weight: 400; }
+
+.service_block_text p {
+  color: #989898;
+  font-size: 85%; }
+
+.service_block_text h6 {
+  color: #989898; }
+
+#services_quote__fullwidth {
+  width: 100%;
+  background-color: #39A38F; }
+
+#services_quote {
+  width: 640px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+#services_quote h1 {
+  font-weight: 400;
+  font-size: 130%; }
+
+#services_quote p {
+  font-weight: 400;
+  font-size: 120%; }

@@ -1,0 +1,109 @@
+/*laptop*/
+
+$width: 640px;
+$color_main: #39A38F;
+
+#team__fullwidth{
+	width: 100%;
+	background-color: #fff;
+	position: relative;
+}
+
+#team{
+	margin: auto;
+	width: $width;
+	height: 200px;
+}
+
+#triangle {
+	left: 46%;
+	width: 60px;
+	position: absolute;
+	bottom:-5px;
+}
+
+
+#team_tittle{
+	text-align: center;
+	margin-top: 50px;
+}
+
+#team_tittle h1{
+	font-size: 160%;
+}
+
+#team_tittle h2{
+	font-weight: 400;
+	color: #989898;
+	font-size: 125%;
+}
+
+#team_tittle h6{
+	color: #989898;
+}
+
+#team_content__fullwidth {
+	width: 100%;
+	background-color: #f0f0f0
+}
+
+#team_content {
+	width: $width;
+	margin: auto;
+	padding-bottom: 45px;
+	padding-top: 55px;
+}
+
+.tns-nav {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.tns-nav  button {
+	width: 10px;
+	height: 10px;
+	border: none;
+	border-radius: 5px;
+	margin: 5px;
+	background-color: #d6d6d6;
+}
+
+.tns-nav-active {
+	background-color: $color_main !important;
+}
+
+.team_carousel_block {
+	margin: auto;
+	background-color: $color_main;
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.team_carousel_block h2 {
+	font-size: 120%;
+}
+
+.team_carousel_block__foto {
+	float: top;
+}
+
+.team_carousel_block__tittle {
+	background-color: #fff;
+	height: 75px;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 3px;
+	margin-top: auto;
+}
+
+.tns-slider {
+	box-sizing: border-box;
+}
+
+.team_carousel_block__tittle:hover{
+	background-color: $color_main;
+	color: #fff;
+}

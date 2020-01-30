@@ -1,0 +1,13 @@
+{% macro services_block(image, title, keyword, text) %}
+	<div class="services_block">
+		<div class="services_block__image"><img src="{{ image }}"></img></div>
+		<div class="service_block_text">
+			<h1>{{ title }}&nbsp;<span style="color:#39A38F;">{{ keyword }}</h1>
+			<h6><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</u><br><br></h6>
+			<p>{{ text }}</p>
+		</div>
+	</div>
+{% endmacro %}

@@ -1,0 +1,53 @@
+{% block styles %}
+	{{ super() }} 
+		<link rel="stylesheet" href="styles/about.css" />
+{% endblock %}
+
+	{% block about %}
+	<div id="about__fullwidth">
+		<div id="about">
+			<div id="about_roran">
+				<h1><strong>&nbsp;About Roran<span  style="font-family: wide; color: #39A38F;">.</span></strong></h1>
+				<h2>Creative studio</h2>
+				<h6><br><br><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</u></h6><br><br>
+				<h5>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+			</div>
+			<div id="about_fancy"> 
+				{% from "blocks/about_blocks.njk" import about_fancy_block %}
+				{{ about_fancy_block('img/paint.png','Some fancy ', 'colors', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ about_fancy_block('img/cup.png','Enough ', 'coffy breaks', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ about_fancy_block('img/rod.png','A little bit of ', 'magic', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+			</div>
+		</div>
+	</div>
+		<div id="about_numbers__fullwidth">
+			<div id="about_numbers">
+				{% from "blocks/about_blocks.njk" import about_numbers_block %}
+				{{ about_numbers_block('img/smile.png','555', 'Empty cups') }}
+				{{ about_numbers_block('img/barbeque.png','666', 'Happy clients') }}
+				{{ about_numbers_block('img/cup.png','777', 'BBQ meetings') }}
+				{{ about_numbers_block('img/alcohol.png','888', 'Cocktail parties') }}
+			</div>
+		</div>
+		
+		<div id="about_clients__fullwidth">
+			<div id="about_clients">
+					<p>Some of our clients<br>We ♡ every single one</p>
+					<h6><u>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</u></h6>
+				<div id="about_clients__logo">
+					{% from "blocks/about_blocks.njk" import about_clients_block %}
+					{{ about_clients_block('img/logo1.png') }}
+					{{ about_clients_block('img/logo2.png') }}
+					{{ about_clients_block('img/logo3.png') }}
+					{{ about_clients_block('img/logo4.png') }}
+				</div>
+			</div>
+		</div>
+
+	{% endblock %}

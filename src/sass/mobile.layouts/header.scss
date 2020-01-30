@@ -1,0 +1,79 @@
+/* header Styles for mobile*/
+
+ @import 'colors';
+  
+  $width: 320px;
+
+  #header__fullwidth{
+	width: 100%;
+	background-color: $color_main;
+	position: relative;
+  }
+  
+  #header__download {
+	background-color: #008372;
+	margin-top: 94px;
+	margin-left: 70%;
+	position: absolute;
+	width: 30%;
+	transform: perspective(10px) rotateX(2deg);
+	padding: 2px;
+  }
+  
+  #header__download__text{
+	background-color: #008372;
+	margin-top: 95px;
+	margin-left: 71%;
+	position: absolute;
+	width: 29%;
+	color: #fff;
+	font-weight: 400;
+	font-size: 45%;
+	padding-top: 12px;
+  }
+  
+  #header{
+	margin:auto;
+	height: 300px;
+	width: $width;
+	color: #ffffff;
+	position: relative;
+	padding-top: 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+  }
+  
+  #header_logo{
+	font-size: 200%;
+	text-shadow: -1px 1px 1px white;
+  }
+  
+  #header h1{
+	  font-weight: 400;
+	  font-size: 150%;
+  }
+  
+  #header h2{
+	  font-weight: 400;
+	  font-size: 100%;
+  }
+  
+  #header h6{
+	  font-size: 40%;
+  }
+  
+  #header_link {
+	  font-size: 80%;
+  }
+	
+  #header_scroll {
+	margin-left: 50%;
+	bottom: 40px;
+	position: absolute;
+  }
+  
+    #header_scroll img{
+		width: 40%;
+		height: auto;
+	}

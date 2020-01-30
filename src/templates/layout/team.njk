@@ -1,0 +1,64 @@
+{% block styles %}
+	{{ super() }} 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+		<link rel="stylesheet" href="styles/team.css" />
+{% endblock %}
+{% block scripts %}	
+	{{ super() }} 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<!--<script src="scripts/carousel.js"></script>-->
+	<script>
+	new tns({
+	  "container": ".my-slider",
+	  "responsive": {
+	  	"320": {
+      "items": 1
+    },
+	  	"640": {
+      "items": 2
+    },
+		"960": {
+       "items": 3
+    }
+  },
+	  "rewind": true,
+	  "swipeAngle": false,
+	  "mouseDrag": true,
+	   "slideBy": "page",
+	  "speed": 400,
+	  "navPosition": "bottom",
+	  "controls": false,
+	  "preventActionWhenRunning": true
+	});
+	</script>
+{% endblock %}
+{% block team %}
+	<div id="team__fullwidth">
+		<div id="team"> 
+			<div id="team_tittle">
+			<h1>Meet...the team</h1>
+			<h2>They are really nice</h2>
+			<h6><br><u>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</u></h6>
+			</div>
+			<div id="triangle"><img src="img/triangle.png" /></div>
+		</div>
+	</div>
+	<div id="team_content__fullwidth">
+		<div id="team_content">
+			<div class="my-slider">
+						{% from "blocks/team_blocks.njk" import team_carousel_block %}
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+				<div>{{ team_carousel_block('img/s1.png', 'Dictum tincidunt', 'diam') }}</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

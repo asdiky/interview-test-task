@@ -1,0 +1,41 @@
+{% block styles %}
+	{{ super() }} 
+	<link rel="stylesheet" href="styles/services.css" />
+{% endblock %}
+
+	{% block services %}
+	<div id="services__fullwidth">
+		<div id="services"> 
+			<div id="services_tittle">
+			<h1>Our Services</h1>
+			<h2>With Passion & Experience</h2>
+			<h6><br><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</u></h6>
+			</div>
+			<div id="services_content">				
+				{% from "blocks/services_blocks.njk" import services_block %}
+				{{ services_block('img/s1.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('img/s2.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('img/s3.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('img/s4.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('img/s5.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+				{{ services_block('img/s6.png', 'Dictum tincidunt', 'diam', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.sunt in culpa qui officia deserunt mollit anim id est laborum.') }}
+			</div>
+		</div>
+	</div>
+	<div id="services_quote__fullwidth">
+		<div  id="services_quote">
+		<h1><img src="img/quote.png">Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, 
+														sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+														<strong>minim veniam,</strong> quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.<img src="img/quote.png"></h1>
+			<h6><br><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</u><br><br></h6>
+				<p>Lorem Doe</p>
+		</div>
+	</div>
+	{% endblock %}

@@ -1,0 +1,4 @@
+/* footer.css links */
+@import "desktop.layouts/footer.css" screen and (min-width: 960px);
+@import "laptop.layouts/footer.css" screen and (min-width: 640px) and (max-width: 959px);
+@import "mobile.layouts/footer.css" screen and (max-width: 639px);

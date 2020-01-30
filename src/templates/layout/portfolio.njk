@@ -1,0 +1,65 @@
+{% block styles %}
+	{{ super() }} 
+	<link rel="stylesheet" href="styles/portfolio.css" />
+{% endblock %}
+
+{% block portfolio %}
+	<div id="portfolio__fullwidth">
+		<div id="portfolio_tittle">
+			<h1>Portfolio</h1>
+			<p>&nbsp;</p>
+			<h2>This is what we've been working on</h2>
+			<h6><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</u></h6>
+		</div>
+		<div id="portfolio-menu">
+			<ul>
+				<li data-filter=".web" onclick="Filter('.web'); active(); this.classList.add('active'); ">Web</li>
+				<li data-filter=".web" onclick="Filter('.digital-art'); active(); this.classList.add('active');">Digital Art</li>
+				<li data-filter=".web" onclick="Filter('.illustrators'); active(); this.classList.add('active');">Illustrators</li>
+				<li data-filter=".web" onclick="Filter('.branding'); active(); this.classList.add('active');">Branding</li>
+				<li data-filter="*" class="active" onclick="Filter('*'); active(); this.classList.add('active');">All</li>
+			</ul>
+		</div>
+	</div>
+	<div id="portfolio-grid__fullwide">
+		<div class="portfolio-grid">
+			{% from "blocks/portfolio_blocks.njk" import portfolio_item %}
+				{{ portfolio_item('web', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('branding', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('illustrators', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('digital-art', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('web', 'img/portfolio.png', 'Free Website PSD', '') }}
+				{{ portfolio_item('branding', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item(' illustrators', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('digital-art', 'img/portfolio.png', '', '') }}
+				{{ portfolio_item('web', 'img/portfolio.png', '', '') }}
+		</div>
+	</div>
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }} 
+	<script src="scripts/isotope.pkgd.min.js"></script>
+	<script>
+	
+		var elem = document.querySelector('.portfolio-grid');
+		var iso = new Isotope( elem, {
+		  // options
+		  itemSelector: '.portfolio-item',
+		  layoutMode: 'fitRows'
+		});
+		
+		function Filter(param) {
+			iso.arrange({ filter: param });
+		}
+	</script>
+	<script>
+	function active() {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace("active", "");
+	} 
+	</script>
+{% endblock %}

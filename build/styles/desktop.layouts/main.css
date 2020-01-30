@@ -1,0 +1,22 @@
+/* desktop main mobile*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: sans;
+  background-color: #d7ffd1; }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+#placeholder {
+  height: 500px;
+  border: 1px solid red;
+  width: 300px; }

@@ -1,0 +1,94 @@
+/*desktop*/
+#about__fullwidth {
+  background-color: #fff;
+  width: 100%; }
+
+#about {
+  margin: auto;
+  width: 960px;
+  height: 607px; }
+
+#about_roran {
+  padding-top: 50px;
+  margin-top: 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1 px solid red;
+  width: 960px;
+  text-align: center; }
+
+#about_roran h6 {
+  color: #989898; }
+
+#about_roran h5 {
+  color: #989898;
+  font-size: 120%;
+  font-weight: 400; }
+
+#about_roran h2 {
+  font-size: 200%;
+  color: #989898; }
+
+#about_roran h1 {
+  font-size: 300%; }
+
+#about_fancy {
+  width: 960px;
+  display: flex;
+  flex-direction: row; }
+
+.about_fancy_block {
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 60px; }
+
+#about_numbers__fullwidth {
+  background-color: #f0f0f0;
+  width: 100%; }
+
+#about_numbers {
+  width: 960px;
+  justify-content: center;
+  height: 190px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+
+.about_numbers_block {
+  width: 220px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about_numbers_block__text {
+  font-size: 120%; }
+
+#about_clients__fullwidth {
+  width: 100%;
+  background-color: #39A38F;
+  height: 348px; }
+
+#about_clients {
+  width: 960px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  font-weight: 900;
+  padding-top: 70px;
+  height: 348px; }
+
+#about_clients__logo {
+  display: flex;
+  flex-direction: row;
+  align-content: baseline;
+  margin-top: 45px;
+  height: 70px; }
+
+.about_clients_block__image {
+  margin-left: 10px; }

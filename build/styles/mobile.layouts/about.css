@@ -1,0 +1,100 @@
+/* About Styles for mobile*/
+#about__fullwidth {
+  background-color: #fff;
+  width: 100%; }
+
+#about {
+  margin: auto;
+  width: 320px; }
+
+#about_roran {
+  padding-top: 50px;
+  margin-top: 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1 px solid red;
+  width: 320px;
+  text-align: center; }
+
+#about_roran h2 {
+  font-size: 120%;
+  color: #989898; }
+
+#about_roran h1 {
+  font-size: 200%; }
+
+#about_roran h5 {
+  color: #989898;
+  font-size: 100%;
+  font-weight: 400; }
+
+#about_roran h6 {
+  color: #989898; }
+
+#about_fancy {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.about_fancy_block {
+  flex-grow: 0;
+  width: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+#about_numbers__fullwidth {
+  background-color: #f0f0f0;
+  width: 100%; }
+
+#about_numbers {
+  width: 320px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+
+.about_numbers_block {
+  width: 220px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.about_numbers_block__text {
+  font-size: 120%; }
+
+#about_clients__fullwidth {
+  width: 100%;
+  background-color: #39A38F;
+  height: 300px; }
+
+#about_clients {
+  width: 320px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  font-weight: 900;
+  margin-top: 60px; }
+
+#about_clients__logo {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: baseline;
+  margin-top: 40px;
+  height: 70px; }
+
+.about_clients_block__image img {
+  height: 32px; }

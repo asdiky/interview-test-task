@@ -1,0 +1,22 @@
+{% macro about_fancy_block(image, title, keyword, content) %}
+<div class="about_fancy_block">
+  <img src="{{ image }}"></img>
+  <h2>{{ title }}<span style="color: #39A38F;">{{ keyword }}</span></h2>
+  <br>
+  <p style="color: #989898;">{{ content }}</p>
+</div>
+{% endmacro %}
+
+{% macro about_numbers_block(image, num, title) %}
+<div class="about_numbers_block">
+  <div class="about_numbers_block__image"><img src="{{ image }}"></img></div>
+  <div class="about_numbers_block__text">
+	  <h1 style="color: #39A38F;"><b>{{ num}}</b></h1>
+	  <p style="color: #989898;">{{ title }}</p>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro about_clients_block(image) %}
+  <div class="about_clients_block__image"><img src="{{ image }}"></img></div>
+{% endmacro %}

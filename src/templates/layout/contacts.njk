@@ -1,0 +1,58 @@
+{% block styles %}
+	{{ super() }} 
+	<link rel="stylesheet" href="styles/contacts.css" />
+{% endblock %}
+
+{% block contacts %}
+<div id="contacts_tittle__fullwidth">
+	<div id="contacts_tittle">
+		<h1>Contact us</h1>
+		<h2>We would really love to hear from you!</h2>
+		<h6><u>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</u></h6>
+	</div>
+</div>
+<div id="contacts_container__fullwidth">
+
+	<div id="contacts_container">
+		<div id="contacts_container__main">
+			<div id="contacts_container__main__forms">
+				<div class="contacts_container__main__forms__naming"><h1>Your name</h1><h2>required</h2></div>
+				<input type="text" name="name" class="small_input">
+				
+				<div class="contacts_container__main__forms__naming"><h1>Your email</h1><h2>required</h2></div>
+				<input type="email" name="email" class="small_input">
+				
+				<div class="contacts_container__main__forms__naming"><h1>Subject</h1></div>
+				<input type="text" name="subject" class="small_input">
+				
+				<div class="contacts_container__main__forms__naming"><h1>Message</h1><h2>required</h2></div>
+				<textarea name="message" class="message_input" > </textarea>
+				
+				<button>Send</button>
+				
+			</div>
+			<div id="contacts_container__main__contactinfo">
+				<h1>Contactinfo</h1>
+				<br>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius felis. Phasellus purus metus, faucibus a nisi vel, tincidunt condimentum elit. Cras in aliquet ante, at hendrerit nisl.</p>
+				<br>
+				<p> Praesent posuere ex eu vehicula iaculis. Mauris in pulvinar mi. Fusce vel quam malesuada, eleifend tortor quis, vestibulum tortor. </p>
+				<br><br>
+	{% from "blocks/contacts_blocks.njk" import contacts_block %}
+		{{ contacts_block('img/cont1.png', 'Lorem ipsum dolor 123', '1000 Lorem ipsum') }}
+		{{ contacts_block('img/cont2.png', 'Lorem ipsum dolor 123', '1000 Lorem ipsum') }}
+		{{ contacts_block('img/cont3.png', 'Lorem ipsum dolor 123', '1000 Lorem ipsum') }}
+			</div>
+		</div>
+	</div>
+	
+	<div id="contacts_container__top">
+		<div id="contacts_container__top__logo"><img src="img/contacts_roran.png"></div>
+	</div>
+	<div id="contacts_container__bottom"></div>
+	
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+p {
+		position: relative;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+}
+
+
+			<div id="nav--social">
+				<nav>
+				  <li><a href="https://www.linkedin.com/">In</a></li>
+				  <li><a href="https://www.pinterest.com/">P</a></li>
+				  <li><a href="https://www.facebook.com/">F</a></li>
+				  <li><a href="https://twitter.com/">T</a></li>
+				</nav>
+			</div>

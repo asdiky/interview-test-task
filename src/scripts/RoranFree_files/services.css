@@ -1,0 +1,4 @@
+/* services.css links */
+@import "desktop.layouts/services.css" screen and (min-width: 960px);
+@import "laptop.layouts/services.css" screen and (min-width: 640px) and (max-width: 959px);
+@import "mobile.layouts/services.css" screen and (max-width: 639px);

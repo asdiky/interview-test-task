@@ -1,0 +1,16 @@
+/* desktop main laptop*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: sans;
+  background-color: #ffffb6; }
+
+.main-container {
+  display: flex;
+  flex-direction: column; }

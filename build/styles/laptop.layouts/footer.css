@@ -1,0 +1,16 @@
+/* laptop */
+footer {
+  width: 100%;
+  background-color: #d9d9d9;
+  color: #888888; }
+
+#footer {
+  width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 1% 20px 1%;
+  justify-content: space-between; }
+
+#footer_social {
+  float: left; }

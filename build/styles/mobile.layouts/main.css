@@ -1,0 +1,16 @@
+/* main Styles for mobile*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: sans;
+  background-color: red; }
+
+.main-container {
+  display: flex;
+  flex-direction: column; }
